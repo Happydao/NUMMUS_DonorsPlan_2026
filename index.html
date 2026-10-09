@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NUMMUS Donors Plan 2026</title>
+<meta name="description" content="The NUMMUS community donation ledger. Follow donations, discover the top donors and track QUANGO allocations at a 1:3 ratio.">
+<meta name="theme-color" content="#F5F1E8">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav">
+<a class="brand" href="https://nummus.meme" aria-label="NUMMUS Aeternitas home"><img src="assets/nummus-logo.png" width="44" height="44" alt=""><span><b>NUMMUS</b><small>AETERNITAS</small></span></a>
+<nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#donors">Donor ledger</a><a href="https://nummus.meme" target="_blank" rel="noopener noreferrer">nummus.meme ↗</a></nav>
+<a class="button dark small" href="#contribute">Make a donation <span aria-hidden="true">↗</span></a>
+</div></header>
+<main class="wrap" id="main">
+<section class="hero" aria-labelledby="page-title">
+<div class="hero-copy"><p class="eyebrow"><span class="dot"></span> The community. The next chapter.</p>
+<h1 id="page-title">NUMMUS<br><em>Donors Plan</em> <span class="year">2026</span></h1>
+<p class="lead">A shared contribution. A greater possibility.<br>Follow every NUMMUS donation and the QUANGO<br class="desktop-break"> allocated to the community.</p>
+<div class="hero-meta"><span class="pill">SOLANA MAINNET</span><span>Since 09 Oct 2026 · 00:00 Europe/Rome</span></div></div>
+<div class="hero-art" aria-hidden="true"><div class="orbit outer"></div><div class="orbit inner"></div><span class="orbit-label">COMMUNITY · CONTRIBUTION · TRANSPARENCY</span><img src="assets/nummus-logo.png" alt="" width="800" height="800"><div class="coin-note"><span>THE DONATION RATIO</span><strong>1 NUMMUS <i>→</i> 3 QUANGO</strong></div></div>
+</section>
+<section id="overview" aria-label="Donation overview">
+<div class="section-line"><p class="eyebrow">I <span class="line"></span> The collective contribution</p><div class="sync"><span id="status-dot" class="dot muted"></span><span id="sync-text" role="status">Connecting to the ledger…</span><button id="refresh" class="icon-button" aria-label="Refresh donation data" title="Refresh donation data">↻</button></div></div>
+<p id="notice" class="notice" role="status" hidden></p>
+<div class="metrics">
+<article class="metric"><div class="metric-label">TOTAL NUMMUS DONATED <span class="metric-icon">↗</span></div><div class="metric-value" id="total-nummus">—</div><div class="metric-foot"><span class="token-dot"></span> NUMMUS <span>Community contributions</span></div></article>
+<article class="metric reward"><div class="metric-label">QUANGO TO BE AIRDROPPED <span class="ratio-badge">×3</span></div><div class="metric-value" id="total-quango">—</div><div class="metric-foot"><span class="token-dot"></span> QUANGO <span>Allocated at a fixed 1:3 ratio</span></div></article>
+<article class="metric community"><div class="metric-label">DONORS <span class="metric-icon">♧</span></div><div class="metric-value" id="total-donors">—</div><div class="metric-foot" id="transfers">Unique contributing wallets</div></article>
+</div>
+<article class="chart-panel"><div class="chart-heading"><div><p class="eyebrow">Every contribution adds up</p><h2>A growing commitment.</h2></div><div class="chart-controls"><div class="segmented" id="chart-token" aria-label="Chart token"><button data-token="nummus" aria-pressed="true">NUMMUS</button><button data-token="quango" aria-pressed="false">QUANGO</button></div><span class="legend"><span class="dot"></span> Cumulative total</span></div></div>
+<div class="chart-stage"><svg id="chart" viewBox="0 0 1100 230" role="img" aria-label="Cumulative donations since the start of the campaign"></svg><div id="chart-empty" class="chart-empty" hidden><span class="empty-symbol">↗</span><strong>The first contribution starts the curve.</strong><span>Verified NUMMUS donations will appear here.</span></div></div>
+<div class="chart-footer"><span id="chart-start">09 OCT 2026</span><span id="chart-caption">NUMMUS · SINCE THE START OF THE PLAN</span><span id="chart-end">NOW</span></div>
+</article>
+</section>
+<section id="donors" class="donors-section" aria-labelledby="donors-title">
+<div class="section-line"><p class="eyebrow">II <span class="line"></span> The people behind the plan</p><span class="top-note">✦ TOP 10 DONORS HIGHLIGHTED</span></div>
+<div class="ledger-heading"><div><h2 id="donors-title">The donor ledger.</h2><p>Every wallet. Every contribution. Every allocation.</p></div><button id="export" class="button outline small" disabled>↓ Export CSV</button></div>
+<div class="ledger-panel"><div class="table-toolbar"><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find your wallet address…" aria-label="Find your wallet address" autocomplete="off" spellcheck="false"></label><div class="sort-controls"><span>Sort by</span><div class="segmented" id="sort"><button data-sort="amount" aria-pressed="true">Top donors ↓</button><button data-sort="recent" aria-pressed="false">Most recent</button></div></div></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Donor table. Scroll horizontally on small screens."><table><thead><tr><th scope="col">RANK</th><th scope="col">DONOR WALLET</th><th scope="col" class="numeric">NUMMUS DONATED</th><th scope="col" class="numeric quango-col">QUANGO ALLOCATION <span>×3</span></th><th scope="col" class="numeric">LAST DONATION</th></tr></thead><tbody id="donor-rows"><tr><td colspan="5" class="empty-table">Loading verified donations…</td></tr></tbody></table></div>
+<div class="table-footer"><span id="page-info" role="status">Up to 20 donors per page</span><div class="pagination"><button id="previous" class="button outline small" disabled aria-label="Previous page">←</button><span id="page-number">1 / 1</span><button id="next" class="button outline small" disabled aria-label="Next page">→</button></div></div></div>
+<p class="ledger-note">Donations from the same wallet are combined. Rankings reflect total NUMMUS donated. “Most recent” sorts by each wallet’s latest donation.</p>
+</section>
+<section id="contribute" class="contribute" aria-labelledby="contribute-title"><div><p class="eyebrow">Be part of what comes next</p><h2 id="contribute-title">Your contribution.<br><em>Three times the QUANGO.</em></h2><p>Send NUMMUS on Solana to the treasury below.<br>For every 1 NUMMUS donated, 3 QUANGO are allocated.</p><div class="treasury"><span class="address-label">DONATION TREASURY · SOLANA</span><div><code id="treasury-address">EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD</code><button id="copy-treasury" class="button dark small">Copy address</button></div></div><a class="text-link" href="https://solscan.io/account/EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD" target="_blank" rel="noopener noreferrer">View the treasury on Solscan ↗</a></div>
+<aside class="how-it-works"><p class="eyebrow">A simple, transparent plan</p><ol><li><span>01</span><div><h3>Contribute NUMMUS</h3><p>Only the official NUMMUS token sent to the treasury is counted.</p></div></li><li><span>02</span><div><h3>Find your wallet</h3><p>Confirmed donations appear after the next update. Search your address or sort by most recent.</p></div></li><li><span>03</span><div><h3>See your allocation</h3><p>100,000 NUMMUS = 300,000 QUANGO. This ledger tracks allocations; the airdrop is distributed separately.</p></div></li></ol></aside></section>
+<details class="verification"><summary>Token contracts & counting rules <span>+</span></summary><div><p><strong>NUMMUS:</strong> <a href="https://solscan.io/token/9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray" target="_blank" rel="noopener noreferrer">9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray ↗</a></p><p><strong>QUANGO:</strong> <a href="https://solscan.io/token/CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn" target="_blank" rel="noopener noreferrer">CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn ↗</a></p><p>The campaign starts on 9 October 2026 at 00:00 Europe/Rome (8 October, 22:00 UTC) and accumulates from that date without resetting daily. Only successful, finalized NUMMUS transfers into treasury-owned token accounts count. Earlier balances, other tokens and treasury self-transfers are excluded. The donor is the owner of the sending token account. Dates are shown in Europe/Rome.</p><p>Data updates are scheduled approximately every 5 minutes and can be delayed. QUANGO figures are allocations, not a record of completed airdrops.</p><a class="text-link" href="data/donations.json">View the public donation dataset ↗</a></div></details>
+</main>
+<footer class="wrap"><a class="brand" href="https://nummus.meme"><img src="assets/nummus-logo.png" width="34" height="34" alt=""><span><b>NUMMUS</b><small>AETERNITAS</small></span></a><p>Community-led. On-chain. Open to everyone.</p><a href="https://github.com/Happydao/NUMMUS_DonorsPlan_2026" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a><div class="footer-bottom">© 2026 · Torrino DAO <span>Nummus Aeternitas Imperat</span></div></footer>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><p class="notice">Enable JavaScript to view the live ledger, or <a href="data/donations.json">download the donation data</a>.</p></noscript>
+</body></html>

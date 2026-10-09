@@ -1,0 +1,11 @@
+{
+  "title": "NUMMUS Donors Plan 2026",
+  "treasury": "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD",
+  "mint": "9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray",
+  "quangoMint": "CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn",
+  "startAt": "2026-10-09T00:00:00+02:00",
+  "timeZone": "Europe/Rome",
+  "decimals": 6,
+  "rewardMultiplier": 3,
+  "seedTokenAccounts": ["9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"]
+}

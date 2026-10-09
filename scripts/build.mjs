@@ -1,0 +1,8 @@
+import { mkdir, cp, rm, readFile } from 'node:fs/promises';
+const data = JSON.parse(await readFile('data/donations.json'));
+if (data.status !== 'verified') throw new Error('A verified snapshot is required before publishing');
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist/data', { recursive: true });
+for (const file of ['index.html', 'styles.css', 'app.js', 'assets']) await cp(file, `dist/${file}`, { recursive: true });
+await cp('data/donations.json', 'dist/data/donations.json');
+console.log('Static site built in dist/');

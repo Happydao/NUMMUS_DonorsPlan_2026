@@ -1,0 +1,11 @@
+{
+  "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
+  "heads": {
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3edWYchBaWQNd5xzGeb2MS4WgdqUFeL27GA8pheA6mFSQMx3C1JB1jq3eph36FUVdPEhmBPJzsKCRvj5wqDUXbBR",
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "GWQQw5wS4JtMM4kkhbG9gLYf5rE41A9BaaphXtsV5cJBoNK49VhL1sij1yFxi7Qb76qLzDqtvJZfddD4szXKPMQ"
+  },
+  "tokenAccounts": [
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
+  ],
+  "events": []
+}

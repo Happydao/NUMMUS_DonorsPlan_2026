@@ -1,0 +1,60 @@
+name: Update ledger and deploy Pages
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '2-57/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: donation-ledger-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test accounting
+        run: npm test
+      - name: Collect finalized Solana transfers
+        id: collect
+        continue-on-error: true
+        run: npm run collect
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+      - name: Preserve verified snapshot
+        if: steps.collect.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/donations.json data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update verified donation ledger [skip ci]'
+            git push origin HEAD:main
+          fi
+      - name: Build site with last verified data
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deployment
+      - name: Report collection failure
+        if: steps.collect.outcome != 'success'
+        run: |
+          echo '::error::Data collection failed. The last verified dataset has been preserved. Configure an archival SOLANA_RPC_URL repository secret if the public endpoint is rate-limited.'
+          exit 1
