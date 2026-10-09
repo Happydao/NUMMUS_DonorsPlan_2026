@@ -1,4 +1,6 @@
+import { collectLedger } from './lib/sync.mjs';
 const $ = selector => document.querySelector(selector);
+let liveState, liveConfigIdentity, liveBusy = false;
 let snapshot, page = 1, sort = 'amount', chartToken = 'nummus', loading = false;
 const pageSize = 20;
 const dateFormat = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', hour12: false });
@@ -15,7 +17,7 @@ function setPressed(group, value, key) { document.querySelectorAll(`${group} but
 function showFreshness() {
   if (!snapshot) return;
   const stale = Date.now() - Date.parse(snapshot.updatedAt) > 20 * 60 * 1000;
-  $('#sync-text').textContent = `${stale ? 'Update delayed' : 'Verified on-chain'} · ${dateFormat.format(new Date(snapshot.updatedAt))} (Rome)`;
+  $('#sync-text').textContent = `${stale ? 'Update delayed' : snapshot.source === 'live' ? 'Live on-chain' : 'Verified on-chain'} · ${dateFormat.format(new Date(snapshot.updatedAt))} (Rome)`;
   $('#status-dot').className = `dot${stale ? ' warning' : ''}`;
   $('#notice').hidden = !stale;
   if (stale) $('#notice').textContent = 'Updates are taking longer than usual. These are the last verified totals; newer donations may not be included yet.';
@@ -28,20 +30,80 @@ async function load() {
     if (!response.ok) throw new Error('Data unavailable');
     const data = await response.json();
     if (data.status !== 'verified' || !Array.isArray(data.donors) || !Array.isArray(data.timeline) || !Number.isFinite(Date.parse(data.updatedAt))) throw new Error('Unverified data');
-    snapshot = data;
-    $('#total-nummus').textContent = format(data.totalRaw);
-    $('#total-quango').textContent = format(data.totalQuangoRaw);
-    $('#total-donors').textContent = data.donorCount.toLocaleString('en-US');
-    $('#transfers').textContent = `${data.transferCount.toLocaleString('en-US')} confirmed ${data.transferCount === 1 ? 'donation' : 'donations'}`;
-    $('#export').disabled = false;
-    showFreshness(); renderTable(); renderChart();
+    // An older published file must never replace a newer live scan.
+    if (!snapshot || JSON.stringify(data.config) !== JSON.stringify(snapshot.config) || Date.parse(data.updatedAt) > Date.parse(snapshot.updatedAt)) {
+      snapshot = data;
+      liveState = undefined;
+      paintSnapshot();
+    }
   } catch {
     $('#notice').hidden = false;
     $('#notice').textContent = snapshot ? 'Unable to refresh. Showing the last successfully loaded data; newer donations may not be included.' : 'Donation data is temporarily unavailable. Please try refreshing shortly. Totals are not shown until verified data is available.';
     $('#sync-text').textContent = snapshot ? `Connection unavailable · last verified ${dateFormat.format(new Date(snapshot.updatedAt))} (Rome)` : 'Data unavailable';
     $('#status-dot').className = 'dot warning';
     if (!snapshot) $('#donor-rows').replaceChildren(emptyRow('The ledger is temporarily unavailable.', 'Please try again shortly.'));
-  } finally { loading = false; $('#refresh').disabled = false; }
+  } finally {
+    loading = false;
+    await refreshLive();
+    $('#refresh').disabled = liveBusy;
+  }
+}
+function paintSnapshot() {
+  const data = snapshot;
+  $('#total-nummus').textContent = format(data.totalRaw);
+  $('#total-quango').textContent = format(data.totalQuangoRaw);
+  $('#total-donors').textContent = data.donorCount.toLocaleString('en-US');
+  $('#transfers').textContent = `${data.transferCount.toLocaleString('en-US')} confirmed ${data.transferCount === 1 ? 'donation' : 'donations'}`;
+  $('#export').disabled = false;
+  showFreshness(); renderTable(); renderChart();
+}
+async function refreshLive() {
+  if (!snapshot || liveBusy) return;
+  liveBusy = true; $('#refresh').disabled = true;
+  const base = snapshot;
+  const identity = JSON.stringify(base.config);
+  if (!liveState || liveConfigIdentity !== identity) {
+    liveConfigIdentity = identity;
+    liveState = { configIdentity: identity, heads: { ...(base.checkpoint?.heads ?? {}) },
+      tokenAccounts: [...(base.checkpoint?.tokenAccounts ?? base.config.seedTokenAccounts)], events: base.events };
+  }
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 90000);
+  let requestId = 0;
+  async function rpc(method, params) {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        if (controller.signal.aborted) throw new Error('Sync timeout');
+        const response = await fetch('https://solana-rpc.publicnode.com', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ jsonrpc: '2.0', id: ++requestId, method, params }),
+          signal: controller.signal, credentials: 'omit',
+        });
+        if (!response.ok) throw new Error('RPC unavailable');
+        const payload = await response.json();
+        if (payload.error || !Object.hasOwn(payload, 'result')) throw new Error('RPC error');
+        return payload.result;
+      } catch (error) {
+        if (attempt === 2 || controller.signal.aborted) throw error;
+        await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+      }
+    }
+  }
+  try {
+    const result = await collectLedger(base.config, liveState, rpc, { discoverCurrentAccounts: false });
+    // If the campaign changed while the scan was in flight, discard this old scan.
+    if (snapshot !== base || JSON.stringify(snapshot.config) !== identity) return;
+    liveState = result.nextState;
+    snapshot = { ...result.snapshot, source: 'live' };
+    paintSnapshot();
+  } catch (error) {
+    console.warn('Live donation refresh failed:', error.message);
+    showFreshness();
+    $('#notice').hidden = false;
+    $('#notice').textContent = 'Live refresh is temporarily unavailable. Showing the last verified totals; new donations may be delayed. Retrying automatically every minute.';
+  } finally {
+    clearTimeout(timeout); liveBusy = false; $('#refresh').disabled = loading;
+  }
 }
 function emptyRow(title, detail) { const row = el('tr'), cell = el('td', null, 'empty-table'); cell.colSpan = 5; cell.append(el('strong', title), el('span', detail)); row.append(cell); return row; }
 function renderTable() {

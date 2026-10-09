@@ -5,4 +5,6 @@ await rm('dist', { recursive: true, force: true });
 await mkdir('dist/data', { recursive: true });
 for (const file of ['index.html', 'styles.css', 'app.js', 'assets']) await cp(file, `dist/${file}`, { recursive: true });
 await cp('data/donations.json', 'dist/data/donations.json');
+await mkdir('dist/lib', { recursive: true });
+for (const file of ['ledger.mjs', 'sync.mjs']) await cp(`scripts/${file}`, `dist/lib/${file}`);
 console.log('Static site built in dist/');
