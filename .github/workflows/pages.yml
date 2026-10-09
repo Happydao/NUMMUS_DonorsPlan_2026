@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '2-57/5 * * * *'
+    # Explicit five-minute schedule; off the top of the hour to reduce queue delays.
+    - cron: '3,8,13,18,23,28,33,38,43,48,53,58 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
