@@ -1,8 +1,8 @@
 {
   "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
   "heads": {
-    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "QFWPMNKywNnGMAro7FP3hF379E8ZHitWcJWCpFLkKhz9vnKsnN6MHQCqdVbvdnjJfv4bFs4BRP3dSeVjj1Y6bP9",
-    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "44tVUxBPBK4wL6Q6TmiG32DTxYbUiBqEBoNoLBPMB8CKkRdQ9KZHcrW61qo6u7AgTEjKuP6afocc5YihGjR6KTdH"
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "4kUKXFLmUJHEcHcpXN5DNKogGahXN26nRGs5sL87Zyof7AJ32GNbdzsc2EPQw9w5kD7koAGn2M6jQZE66UUChzXd",
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw"
   },
   "tokenAccounts": [
     "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
@@ -31,6 +31,86 @@
       "amountRaw": "50000000000",
       "timestamp": 1791540568,
       "slot": 454835289
+    },
+    {
+      "id": "41riRzUPEh6LSDRQQgseBT6k6huGo7JV9gqE2uY4yD6RyzBUjp1VoXAN66pdQv9v617SWEX8i6sVaCr1kyxTnMp6:2",
+      "signature": "41riRzUPEh6LSDRQQgseBT6k6huGo7JV9gqE2uY4yD6RyzBUjp1VoXAN66pdQv9v617SWEX8i6sVaCr1kyxTnMp6",
+      "donor": "BhDSoJ8Jhi4LqPxgPwgQkxtqU5Zo8hPgw96fCwB6UP2X",
+      "amountRaw": "4000000000",
+      "timestamp": 1791540847,
+      "slot": 454836333
+    },
+    {
+      "id": "3YjoKJuLAyYmsSkhiPAnAYH3o9aNtZsbzyAf3SGXjTCzfuLfpB8d2oFuBrrV33AD8GS7iatAbKAk8wYvFLZ9bD8q:3.1",
+      "signature": "3YjoKJuLAyYmsSkhiPAnAYH3o9aNtZsbzyAf3SGXjTCzfuLfpB8d2oFuBrrV33AD8GS7iatAbKAk8wYvFLZ9bD8q",
+      "donor": "2nuYkiQFaFNV2PCyA4Lc4HMZt85pstNjBEogi6daH1Jh",
+      "amountRaw": "380000000000",
+      "timestamp": 1791540873,
+      "slot": 454836430
+    },
+    {
+      "id": "Gnn1Espeg3Y9bS6J4fjizrj9T4zk7TgUgvpa9AArAJPh3iRixY4yDfKgofaEnAKFmepXfDLPxH6RE3XKweEGRNe:2",
+      "signature": "Gnn1Espeg3Y9bS6J4fjizrj9T4zk7TgUgvpa9AArAJPh3iRixY4yDfKgofaEnAKFmepXfDLPxH6RE3XKweEGRNe",
+      "donor": "HsWmMk5Tbo1yZ5MZsZkqEgNMdeh7onLRKUw1vpXgkrKT",
+      "amountRaw": "160000000000",
+      "timestamp": 1791541226,
+      "slot": 454837744
+    },
+    {
+      "id": "2v1cMmHocams8MAVQLQb8zZGw5xJDcSbcv41E7hD48XosXUJEJYoZRx1TTizRV4sFkGqeMuLfBvPyWiP3UbSMuzc:2",
+      "signature": "2v1cMmHocams8MAVQLQb8zZGw5xJDcSbcv41E7hD48XosXUJEJYoZRx1TTizRV4sFkGqeMuLfBvPyWiP3UbSMuzc",
+      "donor": "2Sfig23bttrQE8zVic2CLJDuKFG7JK7uQZKRXw5M9Nxj",
+      "amountRaw": "70000000000",
+      "timestamp": 1791541280,
+      "slot": 454837939
+    },
+    {
+      "id": "rYY2FkGvNkStdjzTmG1XyrSRTxC6QRM15MzWYzoDZPVG6ZaswU71SdvKa2Umd1R2WPvbYGirH5u5uuUKaJcUYG1:2",
+      "signature": "rYY2FkGvNkStdjzTmG1XyrSRTxC6QRM15MzWYzoDZPVG6ZaswU71SdvKa2Umd1R2WPvbYGirH5u5uuUKaJcUYG1",
+      "donor": "CGwtdCXSk1qrfZMF3Vbbc5B2BSPKsTdZ3MiBVPzgALmv",
+      "amountRaw": "50000000000",
+      "timestamp": 1791541583,
+      "slot": 454839075
+    },
+    {
+      "id": "5P2d14nVoTgESUXYbpozRsV1udQ15r6eoeX94DZuEA9E7Xf37wEQdbAQPiiajTM8SaTBWgqMiphoLq5LipGwVBra:2",
+      "signature": "5P2d14nVoTgESUXYbpozRsV1udQ15r6eoeX94DZuEA9E7Xf37wEQdbAQPiiajTM8SaTBWgqMiphoLq5LipGwVBra",
+      "donor": "85jTBVsk8sDA35LocJdTh41EN2Eep59RQ1jUw9EExsCw",
+      "amountRaw": "10000000000",
+      "timestamp": 1791541719,
+      "slot": 454839567
+    },
+    {
+      "id": "T1DuuorADx6CufVh9re1hvrbQFMoCamjTUfyWnje2o8wJBJqjUxus8nktwfRyPDd4sJnQiNkawJ5eSJTzaLP7Mm:2",
+      "signature": "T1DuuorADx6CufVh9re1hvrbQFMoCamjTUfyWnje2o8wJBJqjUxus8nktwfRyPDd4sJnQiNkawJ5eSJTzaLP7Mm",
+      "donor": "5R86mtJQVARVCNkhzNewWrRjBH6RMpvr56wvsrLxHLb2",
+      "amountRaw": "100000000000",
+      "timestamp": 1791543581,
+      "slot": 454846527
+    },
+    {
+      "id": "2JXBicLfmRcRPzwMFkf2Jrdw7iTb1AkKtTbqV5ta45HzPcYoDdyodJqoedyPxViJkgeEmFbM1DTxmq1xMr6My2eX:2",
+      "signature": "2JXBicLfmRcRPzwMFkf2Jrdw7iTb1AkKtTbqV5ta45HzPcYoDdyodJqoedyPxViJkgeEmFbM1DTxmq1xMr6My2eX",
+      "donor": "5BiaiVnb9Dw8mdwenU8ywkGJkHu2NJmYF6YscVN3f9tq",
+      "amountRaw": "3765897575",
+      "timestamp": 1791543730,
+      "slot": 454847082
+    },
+    {
+      "id": "gpjToXCybZ6rrvGYqyycE3Dsh6p6Gtx4WTAbwwYQw4ZcXCW1UwK7ScYFL5yKgj63ifLTYSk57HEC33rdtoQv6hH:2",
+      "signature": "gpjToXCybZ6rrvGYqyycE3Dsh6p6Gtx4WTAbwwYQw4ZcXCW1UwK7ScYFL5yKgj63ifLTYSk57HEC33rdtoQv6hH",
+      "donor": "4u3Xi3fG857uVF6pRLtSjorEEYCZhMfCadD9NQtDbZyB",
+      "amountRaw": "2500000000",
+      "timestamp": 1791544067,
+      "slot": 454848328
+    },
+    {
+      "id": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw:2",
+      "signature": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw",
+      "donor": "9xRbx5Bc5KXADD2CDRaBAvuczw7F3cZhuTMhprXDp66V",
+      "amountRaw": "60000000000",
+      "timestamp": 1791544203,
+      "slot": 454848834
     }
   ]
 }

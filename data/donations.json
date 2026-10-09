@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "verified",
-  "updatedAt": "2026-10-09T10:12:35.252Z",
+  "updatedAt": "2026-10-09T11:11:08.257Z",
   "config": {
     "title": "NUMMUS Donors Plan 2026",
     "treasury": "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD",
@@ -15,18 +15,58 @@
       "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
     ]
   },
-  "totalRaw": "200000000000",
-  "totalQuangoRaw": "600000000000",
-  "donorCount": 3,
-  "transferCount": 3,
+  "totalRaw": "1040265897575",
+  "totalQuangoRaw": "3120797692725",
+  "donorCount": 13,
+  "transferCount": 13,
   "donors": [
+    {
+      "address": "2nuYkiQFaFNV2PCyA4Lc4HMZt85pstNjBEogi6daH1Jh",
+      "amountRaw": "380000000000",
+      "lastDonation": 1791540873,
+      "transfers": 1,
+      "quangoRaw": "1140000000000",
+      "rank": 1
+    },
+    {
+      "address": "HsWmMk5Tbo1yZ5MZsZkqEgNMdeh7onLRKUw1vpXgkrKT",
+      "amountRaw": "160000000000",
+      "lastDonation": 1791541226,
+      "transfers": 1,
+      "quangoRaw": "480000000000",
+      "rank": 2
+    },
+    {
+      "address": "5R86mtJQVARVCNkhzNewWrRjBH6RMpvr56wvsrLxHLb2",
+      "amountRaw": "100000000000",
+      "lastDonation": 1791543581,
+      "transfers": 1,
+      "quangoRaw": "300000000000",
+      "rank": 3
+    },
     {
       "address": "DRV8j5XuURRDFFXGZvHJHP7fM96gyVPw5nJKEhXwmvb4",
       "amountRaw": "100000000000",
       "lastDonation": 1791540517,
       "transfers": 1,
       "quangoRaw": "300000000000",
-      "rank": 1
+      "rank": 4
+    },
+    {
+      "address": "2Sfig23bttrQE8zVic2CLJDuKFG7JK7uQZKRXw5M9Nxj",
+      "amountRaw": "70000000000",
+      "lastDonation": 1791541280,
+      "transfers": 1,
+      "quangoRaw": "210000000000",
+      "rank": 5
+    },
+    {
+      "address": "9xRbx5Bc5KXADD2CDRaBAvuczw7F3cZhuTMhprXDp66V",
+      "amountRaw": "60000000000",
+      "lastDonation": 1791544203,
+      "transfers": 1,
+      "quangoRaw": "180000000000",
+      "rank": 6
     },
     {
       "address": "2wUuis4oeJiTkQ3mQrMT1ZJZDQVmsSqRRQLcT791PYvE",
@@ -34,7 +74,7 @@
       "lastDonation": 1791540568,
       "transfers": 1,
       "quangoRaw": "150000000000",
-      "rank": 2
+      "rank": 7
     },
     {
       "address": "4hcKvjU4EMzz5TSjgk7CMwhTwy4gXTuhdEYHyd5Shaz8",
@@ -42,7 +82,47 @@
       "lastDonation": 1791540459,
       "transfers": 1,
       "quangoRaw": "150000000000",
-      "rank": 3
+      "rank": 8
+    },
+    {
+      "address": "CGwtdCXSk1qrfZMF3Vbbc5B2BSPKsTdZ3MiBVPzgALmv",
+      "amountRaw": "50000000000",
+      "lastDonation": 1791541583,
+      "transfers": 1,
+      "quangoRaw": "150000000000",
+      "rank": 9
+    },
+    {
+      "address": "85jTBVsk8sDA35LocJdTh41EN2Eep59RQ1jUw9EExsCw",
+      "amountRaw": "10000000000",
+      "lastDonation": 1791541719,
+      "transfers": 1,
+      "quangoRaw": "30000000000",
+      "rank": 10
+    },
+    {
+      "address": "BhDSoJ8Jhi4LqPxgPwgQkxtqU5Zo8hPgw96fCwB6UP2X",
+      "amountRaw": "4000000000",
+      "lastDonation": 1791540847,
+      "transfers": 1,
+      "quangoRaw": "12000000000",
+      "rank": 11
+    },
+    {
+      "address": "5BiaiVnb9Dw8mdwenU8ywkGJkHu2NJmYF6YscVN3f9tq",
+      "amountRaw": "3765897575",
+      "lastDonation": 1791543730,
+      "transfers": 1,
+      "quangoRaw": "11297692725",
+      "rank": 12
+    },
+    {
+      "address": "4u3Xi3fG857uVF6pRLtSjorEEYCZhMfCadD9NQtDbZyB",
+      "amountRaw": "2500000000",
+      "lastDonation": 1791544067,
+      "transfers": 1,
+      "quangoRaw": "7500000000",
+      "rank": 13
     }
   ],
   "timeline": [
@@ -61,6 +141,46 @@
     {
       "timestamp": 1791540568,
       "amountRaw": "200000000000"
+    },
+    {
+      "timestamp": 1791540847,
+      "amountRaw": "204000000000"
+    },
+    {
+      "timestamp": 1791540873,
+      "amountRaw": "584000000000"
+    },
+    {
+      "timestamp": 1791541226,
+      "amountRaw": "744000000000"
+    },
+    {
+      "timestamp": 1791541280,
+      "amountRaw": "814000000000"
+    },
+    {
+      "timestamp": 1791541583,
+      "amountRaw": "864000000000"
+    },
+    {
+      "timestamp": 1791541719,
+      "amountRaw": "874000000000"
+    },
+    {
+      "timestamp": 1791543581,
+      "amountRaw": "974000000000"
+    },
+    {
+      "timestamp": 1791543730,
+      "amountRaw": "977765897575"
+    },
+    {
+      "timestamp": 1791544067,
+      "amountRaw": "980265897575"
+    },
+    {
+      "timestamp": 1791544203,
+      "amountRaw": "1040265897575"
     }
   ],
   "events": [
@@ -87,6 +207,86 @@
       "amountRaw": "50000000000",
       "timestamp": 1791540568,
       "slot": 454835289
+    },
+    {
+      "id": "41riRzUPEh6LSDRQQgseBT6k6huGo7JV9gqE2uY4yD6RyzBUjp1VoXAN66pdQv9v617SWEX8i6sVaCr1kyxTnMp6:2",
+      "signature": "41riRzUPEh6LSDRQQgseBT6k6huGo7JV9gqE2uY4yD6RyzBUjp1VoXAN66pdQv9v617SWEX8i6sVaCr1kyxTnMp6",
+      "donor": "BhDSoJ8Jhi4LqPxgPwgQkxtqU5Zo8hPgw96fCwB6UP2X",
+      "amountRaw": "4000000000",
+      "timestamp": 1791540847,
+      "slot": 454836333
+    },
+    {
+      "id": "3YjoKJuLAyYmsSkhiPAnAYH3o9aNtZsbzyAf3SGXjTCzfuLfpB8d2oFuBrrV33AD8GS7iatAbKAk8wYvFLZ9bD8q:3.1",
+      "signature": "3YjoKJuLAyYmsSkhiPAnAYH3o9aNtZsbzyAf3SGXjTCzfuLfpB8d2oFuBrrV33AD8GS7iatAbKAk8wYvFLZ9bD8q",
+      "donor": "2nuYkiQFaFNV2PCyA4Lc4HMZt85pstNjBEogi6daH1Jh",
+      "amountRaw": "380000000000",
+      "timestamp": 1791540873,
+      "slot": 454836430
+    },
+    {
+      "id": "Gnn1Espeg3Y9bS6J4fjizrj9T4zk7TgUgvpa9AArAJPh3iRixY4yDfKgofaEnAKFmepXfDLPxH6RE3XKweEGRNe:2",
+      "signature": "Gnn1Espeg3Y9bS6J4fjizrj9T4zk7TgUgvpa9AArAJPh3iRixY4yDfKgofaEnAKFmepXfDLPxH6RE3XKweEGRNe",
+      "donor": "HsWmMk5Tbo1yZ5MZsZkqEgNMdeh7onLRKUw1vpXgkrKT",
+      "amountRaw": "160000000000",
+      "timestamp": 1791541226,
+      "slot": 454837744
+    },
+    {
+      "id": "2v1cMmHocams8MAVQLQb8zZGw5xJDcSbcv41E7hD48XosXUJEJYoZRx1TTizRV4sFkGqeMuLfBvPyWiP3UbSMuzc:2",
+      "signature": "2v1cMmHocams8MAVQLQb8zZGw5xJDcSbcv41E7hD48XosXUJEJYoZRx1TTizRV4sFkGqeMuLfBvPyWiP3UbSMuzc",
+      "donor": "2Sfig23bttrQE8zVic2CLJDuKFG7JK7uQZKRXw5M9Nxj",
+      "amountRaw": "70000000000",
+      "timestamp": 1791541280,
+      "slot": 454837939
+    },
+    {
+      "id": "rYY2FkGvNkStdjzTmG1XyrSRTxC6QRM15MzWYzoDZPVG6ZaswU71SdvKa2Umd1R2WPvbYGirH5u5uuUKaJcUYG1:2",
+      "signature": "rYY2FkGvNkStdjzTmG1XyrSRTxC6QRM15MzWYzoDZPVG6ZaswU71SdvKa2Umd1R2WPvbYGirH5u5uuUKaJcUYG1",
+      "donor": "CGwtdCXSk1qrfZMF3Vbbc5B2BSPKsTdZ3MiBVPzgALmv",
+      "amountRaw": "50000000000",
+      "timestamp": 1791541583,
+      "slot": 454839075
+    },
+    {
+      "id": "5P2d14nVoTgESUXYbpozRsV1udQ15r6eoeX94DZuEA9E7Xf37wEQdbAQPiiajTM8SaTBWgqMiphoLq5LipGwVBra:2",
+      "signature": "5P2d14nVoTgESUXYbpozRsV1udQ15r6eoeX94DZuEA9E7Xf37wEQdbAQPiiajTM8SaTBWgqMiphoLq5LipGwVBra",
+      "donor": "85jTBVsk8sDA35LocJdTh41EN2Eep59RQ1jUw9EExsCw",
+      "amountRaw": "10000000000",
+      "timestamp": 1791541719,
+      "slot": 454839567
+    },
+    {
+      "id": "T1DuuorADx6CufVh9re1hvrbQFMoCamjTUfyWnje2o8wJBJqjUxus8nktwfRyPDd4sJnQiNkawJ5eSJTzaLP7Mm:2",
+      "signature": "T1DuuorADx6CufVh9re1hvrbQFMoCamjTUfyWnje2o8wJBJqjUxus8nktwfRyPDd4sJnQiNkawJ5eSJTzaLP7Mm",
+      "donor": "5R86mtJQVARVCNkhzNewWrRjBH6RMpvr56wvsrLxHLb2",
+      "amountRaw": "100000000000",
+      "timestamp": 1791543581,
+      "slot": 454846527
+    },
+    {
+      "id": "2JXBicLfmRcRPzwMFkf2Jrdw7iTb1AkKtTbqV5ta45HzPcYoDdyodJqoedyPxViJkgeEmFbM1DTxmq1xMr6My2eX:2",
+      "signature": "2JXBicLfmRcRPzwMFkf2Jrdw7iTb1AkKtTbqV5ta45HzPcYoDdyodJqoedyPxViJkgeEmFbM1DTxmq1xMr6My2eX",
+      "donor": "5BiaiVnb9Dw8mdwenU8ywkGJkHu2NJmYF6YscVN3f9tq",
+      "amountRaw": "3765897575",
+      "timestamp": 1791543730,
+      "slot": 454847082
+    },
+    {
+      "id": "gpjToXCybZ6rrvGYqyycE3Dsh6p6Gtx4WTAbwwYQw4ZcXCW1UwK7ScYFL5yKgj63ifLTYSk57HEC33rdtoQv6hH:2",
+      "signature": "gpjToXCybZ6rrvGYqyycE3Dsh6p6Gtx4WTAbwwYQw4ZcXCW1UwK7ScYFL5yKgj63ifLTYSk57HEC33rdtoQv6hH",
+      "donor": "4u3Xi3fG857uVF6pRLtSjorEEYCZhMfCadD9NQtDbZyB",
+      "amountRaw": "2500000000",
+      "timestamp": 1791544067,
+      "slot": 454848328
+    },
+    {
+      "id": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw:2",
+      "signature": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw",
+      "donor": "9xRbx5Bc5KXADD2CDRaBAvuczw7F3cZhuTMhprXDp66V",
+      "amountRaw": "60000000000",
+      "timestamp": 1791544203,
+      "slot": 454848834
     }
   ]
 }
