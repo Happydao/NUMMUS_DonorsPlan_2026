@@ -1,8 +1,8 @@
 {
   "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
   "heads": {
-    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "4kUKXFLmUJHEcHcpXN5DNKogGahXN26nRGs5sL87Zyof7AJ32GNbdzsc2EPQw9w5kD7koAGn2M6jQZE66UUChzXd",
-    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "3sMnChh9NEa4Qub3PgiC9sS4AK6wFuu2uBKeB6CqCdjMDdT4ZkqixZKib2dCm7w7a481rccspzW5cAhzaM37oABw"
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "28j8HboDWdrtv19fWdEjVtM9jeRyjQGjKQ69Pxc8Ws69TcEmEFP7pAHgwaiCTYM58RMvuvmVcEgKQSGvNpQ6Pa9z",
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "4ETV15dM4bWpy6GzFRfTFmF54FRsg6pvb3FCX4785Zsq7XFwsY9xKXz5FwBrns1ekL9Jc1R568KkAqFEi6P7iJL9"
   },
   "tokenAccounts": [
     "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
@@ -111,6 +111,30 @@
       "amountRaw": "60000000000",
       "timestamp": 1791544203,
       "slot": 454848834
+    },
+    {
+      "id": "5eVnGbEiz1Zo9ToZp2oxZmLELUowtg2LNUjDyP41T5uYwJuC6kU2rvMqCMTpL5q3ivf4KhVtPzzTDooG45JFs7ZT:2",
+      "signature": "5eVnGbEiz1Zo9ToZp2oxZmLELUowtg2LNUjDyP41T5uYwJuC6kU2rvMqCMTpL5q3ivf4KhVtPzzTDooG45JFs7ZT",
+      "donor": "7fyNWpGbkdLgSL4aPBSWvDw5bgGuPitid1mX8TCgNF4S",
+      "amountRaw": "120000000000",
+      "timestamp": 1791544281,
+      "slot": 454849121
+    },
+    {
+      "id": "59toW1uzubbAgK4mDo4fn5sFDwq7nXEgCv2QN5cXLxMoACYyS2YEJt9i6bRcdoWp9fKgGamQZZSQ3WtYzuQKsso:2",
+      "signature": "59toW1uzubbAgK4mDo4fn5sFDwq7nXEgCv2QN5cXLxMoACYyS2YEJt9i6bRcdoWp9fKgGamQZZSQ3WtYzuQKsso",
+      "donor": "9X9cdhnAYe95t5wiaKbpSz4AAfZKUrEsDe42Z25AFwZE",
+      "amountRaw": "7000000000",
+      "timestamp": 1791544762,
+      "slot": 454850900
+    },
+    {
+      "id": "4ETV15dM4bWpy6GzFRfTFmF54FRsg6pvb3FCX4785Zsq7XFwsY9xKXz5FwBrns1ekL9Jc1R568KkAqFEi6P7iJL9:2",
+      "signature": "4ETV15dM4bWpy6GzFRfTFmF54FRsg6pvb3FCX4785Zsq7XFwsY9xKXz5FwBrns1ekL9Jc1R568KkAqFEi6P7iJL9",
+      "donor": "9D8qLVk7miRz7KfA4W1KCQbvKGYk3cbK7VyAMVwgTAVy",
+      "amountRaw": "199931642834",
+      "timestamp": 1791545140,
+      "slot": 454852314
     }
   ]
 }
