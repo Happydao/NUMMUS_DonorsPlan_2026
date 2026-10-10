@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "verified",
-  "updatedAt": "2026-10-10T18:04:05.964Z",
+  "updatedAt": "2026-10-10T21:35:16.724Z",
   "config": {
     "title": "NUMMUS Donors Plan 2026",
     "treasury": "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD",
@@ -15,10 +15,10 @@
       "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
     ]
   },
-  "totalRaw": "4320445463413",
-  "totalQuangoRaw": "12961336390239",
+  "totalRaw": "4361445463413",
+  "totalQuangoRaw": "13084336390239",
   "donorCount": 72,
-  "transferCount": 76,
+  "transferCount": 78,
   "donors": [
     {
       "address": "2nuYkiQFaFNV2PCyA4Lc4HMZt85pstNjBEogi6daH1Jh",
@@ -93,12 +93,20 @@
       "rank": 9
     },
     {
+      "address": "TSqXoEsj3K5XSyoCqfhiWKsgZgiPLwam8YgUL5Uo76T",
+      "amountRaw": "121000000000",
+      "lastDonation": 1791657159,
+      "transfers": 3,
+      "quangoRaw": "363000000000",
+      "rank": 10
+    },
+    {
       "address": "7fyNWpGbkdLgSL4aPBSWvDw5bgGuPitid1mX8TCgNF4S",
       "amountRaw": "120000000000",
       "lastDonation": 1791544281,
       "transfers": 1,
       "quangoRaw": "360000000000",
-      "rank": 10
+      "rank": 11
     },
     {
       "address": "CNpJXZGoBzaaWcxwGRcq3g1vGQdxZH6M5bLX6xfT5V7f",
@@ -106,7 +114,7 @@
       "lastDonation": 1791579075,
       "transfers": 1,
       "quangoRaw": "360000000000",
-      "rank": 11
+      "rank": 12
     },
     {
       "address": "5R86mtJQVARVCNkhzNewWrRjBH6RMpvr56wvsrLxHLb2",
@@ -114,7 +122,7 @@
       "lastDonation": 1791543581,
       "transfers": 1,
       "quangoRaw": "300000000000",
-      "rank": 12
+      "rank": 13
     },
     {
       "address": "A1ZaTZCRUWK2xHM6FzNnBeFtX3jAG9SaWByLwVaXgE59",
@@ -122,7 +130,7 @@
       "lastDonation": 1791555066,
       "transfers": 1,
       "quangoRaw": "300000000000",
-      "rank": 13
+      "rank": 14
     },
     {
       "address": "DRV8j5XuURRDFFXGZvHJHP7fM96gyVPw5nJKEhXwmvb4",
@@ -130,7 +138,7 @@
       "lastDonation": 1791540517,
       "transfers": 1,
       "quangoRaw": "300000000000",
-      "rank": 14
+      "rank": 15
     },
     {
       "address": "HnpzM5iTaWm15GNJLpPDuUgtmLTkEVaTmkxhy969ucWj",
@@ -138,7 +146,7 @@
       "lastDonation": 1791560221,
       "transfers": 1,
       "quangoRaw": "300000000000",
-      "rank": 15
+      "rank": 16
     },
     {
       "address": "4UQ2ERKrBxPCjr8Q6x9in4SACxHxCkGYXvFRYFLXTuXa",
@@ -146,7 +154,7 @@
       "lastDonation": 1791576131,
       "transfers": 1,
       "quangoRaw": "297000000000",
-      "rank": 16
+      "rank": 17
     },
     {
       "address": "9TWZjGgXqrwfVqoJesW6N1o3n1jPYNZedAwXHxy1vhQj",
@@ -154,20 +162,12 @@
       "lastDonation": 1791556147,
       "transfers": 1,
       "quangoRaw": "255000000000",
-      "rank": 17
+      "rank": 18
     },
     {
       "address": "7nNK4aiosHpSTdTe5GXuuRFUWVvHQx3LpG2KdyUJqREu",
       "amountRaw": "80000000000",
       "lastDonation": 1791575011,
-      "transfers": 1,
-      "quangoRaw": "240000000000",
-      "rank": 18
-    },
-    {
-      "address": "TSqXoEsj3K5XSyoCqfhiWKsgZgiPLwam8YgUL5Uo76T",
-      "amountRaw": "80000000000",
-      "lastDonation": 1791573151,
       "transfers": 1,
       "quangoRaw": "240000000000",
       "rank": 19
@@ -905,6 +905,14 @@
     {
       "timestamp": 1791650397,
       "amountRaw": "4320445463413"
+    },
+    {
+      "timestamp": 1791657085,
+      "amountRaw": "4350445463413"
+    },
+    {
+      "timestamp": 1791657159,
+      "amountRaw": "4361445463413"
     }
   ],
   "events": [
@@ -1515,12 +1523,28 @@
       "amountRaw": "10000000000",
       "timestamp": 1791650397,
       "slot": 455324509
+    },
+    {
+      "id": "3FDmbvi5udzPpB2Cj8j7AZfBNfcokfTcCwa6rX8edN1bt3mSj5iGeQe7ePRHc8QoKLYxfbmK1WAUJjGz6AsNF17g:2",
+      "signature": "3FDmbvi5udzPpB2Cj8j7AZfBNfcokfTcCwa6rX8edN1bt3mSj5iGeQe7ePRHc8QoKLYxfbmK1WAUJjGz6AsNF17g",
+      "donor": "TSqXoEsj3K5XSyoCqfhiWKsgZgiPLwam8YgUL5Uo76T",
+      "amountRaw": "30000000000",
+      "timestamp": 1791657085,
+      "slot": 455355003
+    },
+    {
+      "id": "2UrH7twgF9Wv6bVVznoZTs1geQTuzoxhJZQEC8xA2xCdynGrugb7LV9MoAqkYiR5uQVD5QEvwNiRGvgg5gUeZX4s:2",
+      "signature": "2UrH7twgF9Wv6bVVznoZTs1geQTuzoxhJZQEC8xA2xCdynGrugb7LV9MoAqkYiR5uQVD5QEvwNiRGvgg5gUeZX4s",
+      "donor": "TSqXoEsj3K5XSyoCqfhiWKsgZgiPLwam8YgUL5Uo76T",
+      "amountRaw": "11000000000",
+      "timestamp": 1791657159,
+      "slot": 455355339
     }
   ],
   "checkpoint": {
     "heads": {
       "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3wEe2sPcG8uDSWkAhPRX9tzrpSiFgwLo7jNTSsHFyFHbhMWgUiYiw4CDGaBVM85WUxA7ZSjptPLpeU2mxzAFtQM8",
-      "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "2GttdzYifwhDag1fSLrXiRSU2RngzUgY8in1ii1iBWud7osXgmt2e5hop8B2qdyFtmkZtUaeGpKsVMFFWd9iSaVS"
+      "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "2UrH7twgF9Wv6bVVznoZTs1geQTuzoxhJZQEC8xA2xCdynGrugb7LV9MoAqkYiR5uQVD5QEvwNiRGvgg5gUeZX4s"
     },
     "tokenAccounts": [
       "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
