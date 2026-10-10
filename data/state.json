@@ -1,8 +1,8 @@
 {
   "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
   "heads": {
-    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "iSRzzFZW5WMyw3eJAviuzGkojS7v2BxrBkCHh2K9BLpSjPweZTF6x5k14hSZXJpiTFyFKb9YfVMW6TDpGoXR413",
-    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "1KtgfF6ytpU7atSrcTGKqs3Y6yXgwp4pPfaSwHCVvuYbFd68dwLVNTzzHy5LrZutgFh87Tq9UxjSZzuRPg9qAJ4"
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "5u96yyQXEabGPX6xxKLedgvhVyhtrF2KJABQeg2dTiPrXxE57W3XXGiNkMde7RH77n4TGgjxXxUVZmPGpzewZeCU",
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "5TWrrprtyt5GY8SN9FCVC721MAw3ieHPMxncEpECr7Nq8ovFuBmzA9q1zXEhYoURW95AQR8r75eLmr9rpsnmDguC"
   },
   "tokenAccounts": [
     "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
@@ -567,6 +567,30 @@
       "amountRaw": "20000000000",
       "timestamp": 1791615330,
       "slot": 455163793
+    },
+    {
+      "id": "2Fv57SiUTxHa9dDg6TSTWw7icUhp8HwSwx9cJvr8kTZKWV9odh9Kwo1Deh9eJQR3M2hht9SF4QHYaQib5JCmW5EX:2",
+      "signature": "2Fv57SiUTxHa9dDg6TSTWw7icUhp8HwSwx9cJvr8kTZKWV9odh9Kwo1Deh9eJQR3M2hht9SF4QHYaQib5JCmW5EX",
+      "donor": "3Djwa3yvVHwMzEXonCzobUqvRx7k9RwKss48ATYTwbVS",
+      "amountRaw": "65000000000",
+      "timestamp": 1791619699,
+      "slot": 455183886
+    },
+    {
+      "id": "3wiShe82joJprPvChbipyxmsQa8N9jbx8CnRn1SJTybrkuS95BLjLMrC5dKtfgX88hirTWSn8nupwMnBN4Bhp8HF:2",
+      "signature": "3wiShe82joJprPvChbipyxmsQa8N9jbx8CnRn1SJTybrkuS95BLjLMrC5dKtfgX88hirTWSn8nupwMnBN4Bhp8HF",
+      "donor": "3HrHkpn86Fryn2uH2CBGtwL11EkZuoVdEddKxgJmHnZn",
+      "amountRaw": "65000000000",
+      "timestamp": 1791619747,
+      "slot": 455184101
+    },
+    {
+      "id": "5TWrrprtyt5GY8SN9FCVC721MAw3ieHPMxncEpECr7Nq8ovFuBmzA9q1zXEhYoURW95AQR8r75eLmr9rpsnmDguC:2",
+      "signature": "5TWrrprtyt5GY8SN9FCVC721MAw3ieHPMxncEpECr7Nq8ovFuBmzA9q1zXEhYoURW95AQR8r75eLmr9rpsnmDguC",
+      "donor": "5JLUCo2WJtgrUXmGXoXVm6a2L6RJzVz5rnn91kcLQfjg",
+      "amountRaw": "40000000000",
+      "timestamp": 1791621935,
+      "slot": 455194147
     }
   ]
 }
