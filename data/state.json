@@ -1,8 +1,8 @@
 {
   "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
   "heads": {
-    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3wEe2sPcG8uDSWkAhPRX9tzrpSiFgwLo7jNTSsHFyFHbhMWgUiYiw4CDGaBVM85WUxA7ZSjptPLpeU2mxzAFtQM8",
-    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "2UrH7twgF9Wv6bVVznoZTs1geQTuzoxhJZQEC8xA2xCdynGrugb7LV9MoAqkYiR5uQVD5QEvwNiRGvgg5gUeZX4s"
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "32BTm6mex9ECacbLKuhLffTBZ6EETYP8SHavvS7QDvZnR3EoqxVjEcFVbp5ed6g5ox5kiaABzMtshYi6ajA6XFLi",
+    "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "yb1Cna2cCdRuTBsrfQfmvcXRuyZnGUkRUSwm4UqoWaJEpqksDVhmVsrE46keTdCUweQKfHJhDMUYsELRKrdQWXw"
   },
   "tokenAccounts": [
     "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M"
@@ -631,6 +631,22 @@
       "amountRaw": "11000000000",
       "timestamp": 1791657159,
       "slot": 455355339
+    },
+    {
+      "id": "5n19uT7x431THCPeCyAwjxcbiDDnTdYanwDtYh69kxn8CSRc96BJ6FWFvJf4pheHWv2zTiUqgJ9gpXufaLbtqX8J:2",
+      "signature": "5n19uT7x431THCPeCyAwjxcbiDDnTdYanwDtYh69kxn8CSRc96BJ6FWFvJf4pheHWv2zTiUqgJ9gpXufaLbtqX8J",
+      "donor": "3jo1iZ2DHy9YtnJjagyyS82gFFomoTBVN3TjfCyUnjvW",
+      "amountRaw": "2000000000",
+      "timestamp": 1791672247,
+      "slot": 455424432
+    },
+    {
+      "id": "yb1Cna2cCdRuTBsrfQfmvcXRuyZnGUkRUSwm4UqoWaJEpqksDVhmVsrE46keTdCUweQKfHJhDMUYsELRKrdQWXw:2",
+      "signature": "yb1Cna2cCdRuTBsrfQfmvcXRuyZnGUkRUSwm4UqoWaJEpqksDVhmVsrE46keTdCUweQKfHJhDMUYsELRKrdQWXw",
+      "donor": "EmgnBM8CvXiBJ4PEqqddm5Ps8wXJ373NsEWGMHxhvdw7",
+      "amountRaw": "20000000000",
+      "timestamp": 1791672262,
+      "slot": 455424502
     }
   ]
 }
