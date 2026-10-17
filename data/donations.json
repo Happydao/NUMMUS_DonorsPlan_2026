@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "verified",
-  "updatedAt": "2026-10-17T13:54:43.245Z",
+  "updatedAt": "2026-10-17T16:49:51.342Z",
   "config": {
     "title": "NUMMUS Donors Plan 2026",
     "treasury": "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD",
@@ -1963,7 +1963,7 @@
   ],
   "checkpoint": {
     "heads": {
-      "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3ByZ98CPopjd6Fa5FduGavLvJo45sWcEhAqV8Xd4RoEt8UJmzzokvUXamZfGhJk5K6f9KYeSFDBqsPykGZHurkxT",
+      "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3aVTPMAuHKtKQJfB2Z7RFeMTWV8WhWp76bPQVfrrkhL8PuYnUfQ1dTKAZfs6u6dxykioJjbpNKzMG5h6HaE8uGga",
       "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "2Mk1oScCNYZLYtxuU3kyZhdgg9JF24LNR4UwK8jnaLXL7hNL9chJMdtLEdqsLtsDrLnY3XV3woWP2wQQLXWnuP9G"
     },
     "tokenAccounts": [

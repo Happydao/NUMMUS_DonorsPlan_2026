@@ -1,7 +1,7 @@
 {
   "configIdentity": "{\"title\":\"NUMMUS Donors Plan 2026\",\"treasury\":\"EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD\",\"mint\":\"9JK2U7aEkp3tWaFNuaJowWRgNys5DVaKGxWk73VT5ray\",\"quangoMint\":\"CSRvuL45tXnqYKqk9RXBksuaFQzsamp3ACT5pgEQTVzn\",\"startAt\":\"2026-10-09T00:00:00+02:00\",\"timeZone\":\"Europe/Rome\",\"decimals\":6,\"rewardMultiplier\":3,\"seedTokenAccounts\":[\"9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M\"]}",
   "heads": {
-    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3ByZ98CPopjd6Fa5FduGavLvJo45sWcEhAqV8Xd4RoEt8UJmzzokvUXamZfGhJk5K6f9KYeSFDBqsPykGZHurkxT",
+    "EKjb5grMX19c3cAZa5LQjqksDpqqVLTGZrswh79WkPdD": "3aVTPMAuHKtKQJfB2Z7RFeMTWV8WhWp76bPQVfrrkhL8PuYnUfQ1dTKAZfs6u6dxykioJjbpNKzMG5h6HaE8uGga",
     "9iJkkiZ66oG54Hrx7R2P22iQkXkRpCwajVfgJrmoR18M": "2Mk1oScCNYZLYtxuU3kyZhdgg9JF24LNR4UwK8jnaLXL7hNL9chJMdtLEdqsLtsDrLnY3XV3woWP2wQQLXWnuP9G"
   },
   "tokenAccounts": [
